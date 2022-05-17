@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./api/index",
+    "build": "npm install --prefix ui && npm run build --prefix ui",
     "api": "nodemon ./api/index --ignore ui",
     "ui": "npm run dev --prefix ui",
     "dev": "concurrently \"npm run api\" \"npm run ui\""
