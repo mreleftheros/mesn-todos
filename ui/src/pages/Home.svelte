@@ -9,7 +9,7 @@
 	let error = '';
 
   onMount(() => {
-    if ($todos.length > 0) return;
+    if ($todos.length > 0 || !$auth) return;
 
     isLoading = true;
     todos.getAll()
