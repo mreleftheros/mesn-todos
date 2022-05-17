@@ -11,6 +11,8 @@
 }
 
 body {
+  display: grid;
+  grid-template-rows: minmax(6rem, auto) 1fr minmax(3rem, auto);
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   min-height: 100vh;
